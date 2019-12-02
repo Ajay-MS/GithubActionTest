@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo Feature flag rollout demo!
+      run: echo Feature flag rollout demo! $(env.FIRST_VAR)
     - name: 'Whitelisting Row A users'
       uses: Ajay-MS/hello-world-action@master
       with:
